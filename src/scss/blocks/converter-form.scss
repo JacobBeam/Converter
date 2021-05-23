@@ -1,0 +1,87 @@
+.converter-form{
+
+}
+
+.converter-form__wrapper{
+  display: grid;
+  grid-template-columns:1fr auto 1fr;
+  grid-template-rows:1fr 1fr;
+
+margin-bottom: 105px;
+
+}
+.converter-form__collumn{
+  grid-column: span;
+  grid-row: 1/3;
+display: grid;
+grid-template-columns:1fr auto;
+column-gap: 15px;
+min-width: 38.5%;
+
+}
+.converter-form__label{
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+  margin-bottom: 30px;
+  font-weight: 500;
+  color:$color-text;
+  @include text(22px, 30.8px);
+}
+.converter-form__input{
+  grid-column: 1/2;
+  grid-row: 2/2;
+  min-width: 390px;
+  border: 1px solid $color-text;
+  border-radius: 4px;
+  font-weight: 500;
+  color:$color-text;
+  text-align: center;
+  padding: 13px;
+
+  @include text(24px, 33.6px);
+
+}
+.converter-form__select{
+  grid-column: 2/3;
+  grid-row: 2/2;
+
+  min-width: 120px;
+  border: 1px solid $color-text;
+  border-radius: 4px;
+  font-weight: 400;
+  color:$color-numbers;
+  text-align: center;
+  padding: 9px;
+
+  @include text(30px, 42px);
+
+}
+
+.converter-form__img{
+  width: 120px;
+  grid-column: 2/3;
+  grid-row: 2/2;
+  align-self: center;
+}
+
+.converter-form__row{
+  display: flex;
+  justify-content: space-between;
+}
+.converter-form__submit{
+  width: 382px;
+  border-radius: 4px;
+  padding: 25px;
+  background-color: $color-buttons;
+  color: $color-text-promo;
+
+  @include text(18px, 25.2px);
+
+  &:hover{
+    opacity: 0.7;
+  }
+  &:active{
+    opacity: 0.5;
+  }
+}

@@ -1,12 +1,12 @@
 body {
-  min-width: 320px;
+  min-width: 1366px;
   margin: 0;
   padding: 0;
   font-family: $main-font;
   font-weight: 400;
   background-color: $color-bg-body;
 
-  @include text(14px, 18px);
+  @include text(16px, 18.75px);
 }
 
 a {

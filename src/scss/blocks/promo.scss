@@ -1,0 +1,64 @@
+//background: linear-gradient($color-bg-body 169px, $color-bg-alt 169px 100%);
+
+.promo{
+  min-height: 400px;
+  background:linear-gradient(180.24deg, rgba(32, 39, 179, 0) 36.31%, #2027B3 99.79%),
+  linear-gradient(183.47deg, rgba(56, 65, 255, 0) 66.3%, #3841FF 97.14%),
+  linear-gradient(183.47deg, rgba(56, 65, 255, 0) 27.26%, #3841FF 97.14%),
+  linear-gradient(180.24deg, rgba(32, 39, 179, 0) 32.89%, rgba(32, 39, 179, 0.100775) 32.9%, #2027B3 99.79%);
+  background-repeat: no-repeat;
+  background-position:left bottom, 12.2% bottom, 72.9% bottom, right bottom;
+  background-size: 10.89% auto, 10.89% 67.25%,19.76% 67.25%,21.82% auto;
+  background-color: $color-bg-promo;
+display: flex;
+}
+.promo__cintainer{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo__info{
+width: 300px;
+  padding:80px 0;
+}
+.promo__title{
+color:$color-text-promo;
+margin: 0;
+padding: 0;
+font-weight: bold;
+margin-bottom: 20px;
+
+@include text(54px, 63px);
+}
+.promo__subtitle{
+  color:$color-text-promo;
+margin: 0;
+padding: 0;
+margin-bottom: 40px;
+
+@include text(22px, 26px);
+}
+.promo__link{
+  display: block;
+  text-align: center;
+  width: 234px;
+  padding: 20px;
+  background-color: $color-buttons-alt;
+  border-radius: 4px;
+  font-weight: 500;
+  @include text(18px, 21px);
+
+  &:active{
+    border:red
+  }
+}
+.promo__wrapper{
+width: 444px;
+  margin-left: 120px;
+
+}
+.promo__img{
+width: 100%;
+display: flex;
+}

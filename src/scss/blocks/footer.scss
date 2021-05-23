@@ -1,0 +1,33 @@
+.footer{
+  background-color: $color-bg-alt;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  }
+  .footer__container{
+  display: flex;
+  justify-content: space-between;
+align-items: baseline;
+  }
+  .footer__wrapper{
+
+  }
+  .footer__logo{
+    display: block;
+  margin-bottom: 20px;
+  }
+  .footer__text{
+    width: 252px;
+  margin: 0;
+  padding: 0;
+  color:$color-text-alt;
+  @include text(12px, 16.8px);
+  }
+  .footer-nav__list{
+
+  }
+  .footer-nav__item{
+
+  }
+  .footer-nav__link{
+
+  }
