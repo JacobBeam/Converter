@@ -5,18 +5,6 @@ import {dateMax, dateMin} from "../utils/const.js";
 const NUMBER_OF_DIGITS = 2;
 const TWO_DIGIT_FORMAT = `0`;
 
-const Method = {
-  GET: `GET`,
-  PUT: `PUT`,
-  POST: `POST`,
-  DELETE: `DELETE`
-};
-
-const SuccessHTTPStatusRange = {
-  MIN: 200,
-  MAX: 299
-};
-
 const TOTAL_DAYS = 7
 
 const URL_TODAY= `https://www.cbr-xml-daily.ru/daily_json.js`
@@ -57,4 +45,5 @@ const requests = urls.map(url=>fetch(url, {
   method: GET,
 }))
 Promise.all(requests)
-.then(responses =>responses.json())
+.then(responses => Promise.all(responses.map(r => r.json())))
+.then(data => console.log(data))
