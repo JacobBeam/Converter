@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   background-color: $color-bg-body;
 
-  @include text(16px, 18.75px);
+  @include text(16px, 19px);
 }
 
 a {
