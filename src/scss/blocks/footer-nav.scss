@@ -4,7 +4,7 @@
   padding: 0;
   color: #1F1E25;
   font-weight: 500;
-  @include text(16px, 22.4px);
+  @include text(16px, 140%);
 }
 .footer-nav__item{
 
@@ -14,7 +14,7 @@
 }
 .footer-nav__link{
 display: block;
-
+color: $color-text;
 
 &:hover{
   text-decoration: underline;

@@ -21,7 +21,7 @@ margin: 0;
 margin-bottom: 35px;
 padding: 0;
 
-@include text(18px, 23.4px);
+@include text(18px, 130%);
 
 &::after{
   content:"";
@@ -65,7 +65,7 @@ margin-right: 7px;
   background-color: $color-buttons;
   color: $color-text-promo;
 
-  @include text(16px, 18.75px);
+  @include text(16px, 19px);
 
   &:hover{
     opacity: 0.7;

@@ -47,9 +47,11 @@
 }
 
 .main-nav__login{
+  position: relative;
   display: block;
   margin-left: auto;
   color: $color-text;
+  padding-left: 30px ;
 
   &:hover{
     text-decoration: underline;
@@ -57,4 +59,15 @@
   &:active{
     opacity: 0.6;
   }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 22px;
+    background-image: url("../../img/icons/login-icon.svg");
+  }
+
 }
