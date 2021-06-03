@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import {dateMax, dateMin} from "../utils/const.js";
+import {dateMax, dateMin} from "./utils.js";
 
 
 const NUMBER_OF_DIGITS = 2;
@@ -41,9 +41,12 @@ const getDaysForRequest = (date)=> {
 
   const daysForRequest = getDaysForRequest(dateMax)
   const urls = [URL_TODAY, ...daysForRequest.map(date=>getUrl(date))]
-const requests = urls.map(url=>fetch(url, {
-  method: GET,
+
+export const requests = urls.map(url=>fetch(url, {
+  method: 'GET',
 }))
-Promise.all(requests)
-.then(responses => Promise.all(responses.map(r => r.json())))
-.then(data => console.log(data))
+
+
+//Promise.all(requests)
+//.then(responses => Promise.all(responses.map(r => r.json())))
+//.then(data => console.log(data))

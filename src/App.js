@@ -10,6 +10,8 @@ import Footer from './components/footer';
 
 import './App.scss';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,7 @@ logo={logo}
  logoTwitter={logoTwitter}
  logoYoutube={logoYoutube}>
  </Footer>
+
 
     </div>
   );
