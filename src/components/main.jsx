@@ -5,9 +5,9 @@ import History from './history';
 
 const Main = (props) => {
 
-const [historyList, setHistoryList] = useState([]);
+  const [historyList, setHistoryList] = useState([]);
 
-const {card}=props;
+  const {card} = props;
 
   return (
     <main>
@@ -15,7 +15,7 @@ const {card}=props;
       <Converter setHistoryList={setHistoryList}></Converter>
       <History historyList={historyList} setHistoryList={setHistoryList}></History>
     </main>
-  )
+  );
 };
 
 export default Main;

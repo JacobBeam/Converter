@@ -29,8 +29,8 @@
   &:not(:last-child){
     margin-right: 25px;
   }
-
 }
+
 .main-nav__link{
   display: block;
   color: $color-text;
@@ -69,5 +69,4 @@
     height: 22px;
     background-image: url("../../img/icons/login-icon.svg");
   }
-
 }

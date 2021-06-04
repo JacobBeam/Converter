@@ -18,7 +18,7 @@ const Promo = (props) => {
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default Promo;

@@ -11,23 +11,18 @@ import Footer from './components/footer';
 import './App.scss';
 
 
-
 function App() {
   return (
     <div className="App">
- <MainNav logo={logo}></MainNav>
-
-
-    <Main card={card}></Main>
-<Footer
-logo={logo}
- logoFacebook={logoFacebook}
- logoInstagram={logoInstagram}
- logoTwitter={logoTwitter}
- logoYoutube={logoYoutube}>
- </Footer>
-
-
+      <MainNav logo={logo}></MainNav>
+      <Main card={card}></Main>
+      <Footer
+        logo={logo}
+        logoFacebook={logoFacebook}
+        logoInstagram={logoInstagram}
+        logoTwitter={logoTwitter}
+        logoYoutube={logoYoutube}>
+      </Footer>
     </div>
   );
 }

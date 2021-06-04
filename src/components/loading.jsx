@@ -8,7 +8,7 @@ const Loading = () => {
         <h1 className="converter__title">Пожалуйста, подождите. Загружаются курсы валют</h1>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Loading;

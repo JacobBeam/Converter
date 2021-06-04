@@ -2,32 +2,23 @@
   background-color: $color-bg-alt;
   padding-top: 40px;
   padding-bottom: 60px;
-  }
-  .footer__container{
+}
+
+.footer__container{
   display: flex;
   justify-content: space-between;
-align-items: baseline;
-  }
-  .footer__wrapper{
+  align-items: baseline;
+}
 
-  }
-  .footer__logo{
-    display: block;
+.footer__logo{
+  display: block;
   margin-bottom: 20px;
-  }
-  .footer__text{
-    width: 252px;
+}
+
+.footer__text{
+  width: 252px;
   margin: 0;
   padding: 0;
   color:$color-text-alt;
   @include text(12px, 140%);
-  }
-  .footer-nav__list{
-
-  }
-  .footer-nav__item{
-
-  }
-  .footer-nav__link{
-
-  }
+}
